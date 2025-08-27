@@ -1,0 +1,17 @@
+{
+    "Navbar": {
+      "home": "Ana Sayfa",
+      "about": "Hakkında",
+      "services": "Hizmetler",
+      "team": "Ekip",
+      "contact": "İletişim",
+      "language": "Dil"
+    },
+    "home": {
+    "heading": "deneme metnidir bu dikkat.",
+    "button_contact": "İletişim",
+    "description": "Cesur girişimcilerle iş birliği yapıyor, teknoloji, yapay zeka ve biyoteknoloji ile mümkün olanı yeniden tanımlıyoruz."
+  }
+    
+  }
+  

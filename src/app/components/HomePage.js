@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import Button from "./Button";
+import { useTranslations } from "next-intl";
 
-const HomePage = () => {
+export default function HomePage() {
+  const t = useTranslations("home");
+
   return (
     <div className="fixed inset-0 w-full h-screen overflow-hidden z-10">
-      {/* Video Arka Plan */}
       <video
         autoPlay
         muted
@@ -15,27 +18,21 @@ const HomePage = () => {
         <source src="/bg.mp4" type="video/mp4" />
       </video>
 
-      {/* Hero Content */}
       <div className="relative z-10 flex flex-col justify-center h-full p-10 text-white">
         <h1 className="text-6xl font-archivo font-normal tracking-tight mb-6">
-          Vizyonlu olunmaz. <br />
-          Vizyonlu doğulur gardaş.
+          {t("heading")}
         </h1>
 
         <div className="flex items-center py-2">
-            <Button>İletişim</Button>
+          <Button>{t("button_contact")}</Button>
         </div>
 
         <div className="py-10 pe-30 flex items-center justify-end">
-            <p className="text-2xl font-medium tracking-tight max-w-3xl ">
-          We partner with daring entrepreneurs leveraging <br />
-          technology, artificial intelligence, and biotechnology <br />
-          to redefine what’s possible.
-        </p>
+          <p className="text-2xl font-medium tracking-tight max-w-3xl ">
+            {t("description")}
+          </p>
         </div>
       </div>
     </div>
   );
-};
-
-export default HomePage;
+}

@@ -1,0 +1,16 @@
+{
+    "Navbar": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "team": "Team",
+      "contact": "Contact",
+      "language": "Language"
+    },
+    "home": {
+        "heading": "Visionary people aren't made. Visionary people are born, bro.",
+        "button_contact": "Contact",
+        "description": "We partner with daring entrepreneurs leveraging technology, artificial intelligence, and biotechnology to redefine what’s possible."
+      }
+  }
+  
